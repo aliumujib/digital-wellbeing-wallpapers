@@ -1,0 +1,84 @@
+name: Validate PR
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      
+      - name: Install dependencies
+        run: |
+          pip install Pillow
+      
+      - name: Validate manifest structure
+        run: |
+          echo "✅ Validating manifest..."
+          python3 scripts/validate_manifest.py
+      
+      - name: Check for missing thumbnails
+        run: |
+          echo "🔍 Checking for missing thumbnails..."
+          MISSING=0
+          
+          for img in $(find wallpapers -type f \( -name "*.jpg" -o -name "*.jpeg" -o -name "*.png" -o -name "*.webp" \) ! -name "*_thumb.*"); do
+            dir=$(dirname "$img")
+            base=$(basename "$img" | sed 's/\.[^.]*$//')
+            ext="${img##*.}"
+            thumb="${dir}/${base}_thumb.${ext}"
+            
+            if [ ! -f "$thumb" ]; then
+              echo "❌ Missing thumbnail: $thumb"
+              MISSING=$((MISSING + 1))
+            fi
+          done
+          
+          if [ $MISSING -gt 0 ]; then
+            echo ""
+            echo "⚠️  Found $MISSING missing thumbnails"
+            echo "💡 Run 'make thumbnails' locally to generate them"
+            exit 1
+          else
+            echo "✓ All thumbnails present"
+          fi
+      
+      - name: Check manifest is up to date
+        run: |
+          echo "🔍 Checking if manifest is up to date..."
+          
+          # Generate a new manifest
+          python3 scripts/generate_manifest.py
+          
+          # Check if it differs from committed version
+          if ! git diff --quiet manifest.json; then
+            echo "❌ Manifest is out of date!"
+            echo ""
+            echo "Differences found:"
+            git diff manifest.json
+            echo ""
+            echo "💡 Run 'make manifest' locally and commit the changes"
+            exit 1
+          else
+            echo "✓ Manifest is up to date"
+          fi
+      
+      - name: Summary
+        if: always()
+        run: |
+          echo "## Validation Results" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          WALLPAPER_COUNT=$(find wallpapers -type f \( -name "*.jpg" -o -name "*.jpeg" -o -name "*.png" -o -name "*.webp" \) ! -name "*_thumb.*" | wc -l)
+          echo "📊 Total wallpapers: **$WALLPAPER_COUNT**" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "✅ All validation checks passed!" >> $GITHUB_STEP_SUMMARY

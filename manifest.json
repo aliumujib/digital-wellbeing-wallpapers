@@ -1,6 +1,285 @@
 {
   "version": 1,
-  "lastUpdated": "2025-10-14T06:27:00Z",
-  "baseUrl": "https://raw.githubusercontent.com/amjb_apps/digital-wellbeing-wallpapers/main",
-  "wallpapers": []
+  "lastUpdated": "2025-10-14T05:40:48Z",
+  "baseUrl": "https://raw.githubusercontent.com/aliumujib/digital-wellbeing-wallpapers/main",
+  "wallpapers": [
+    {
+      "id": "default_boat_river",
+      "filename": "boat_river.webp",
+      "category": "default",
+      "displayName": "Boat River",
+      "description": "Tranquil water scene",
+      "url": "https://raw.githubusercontent.com/aliumujib/digital-wellbeing-wallpapers/main/wallpapers/default/boat_river.webp",
+      "thumbnailUrl": "https://raw.githubusercontent.com/aliumujib/digital-wellbeing-wallpapers/main/wallpapers/default/boat_river_thumb.webp",
+      "width": 1024,
+      "height": 1536,
+      "fileSize": 234770,
+      "tags": [
+        "default"
+      ],
+      "author": "Abdulmujeeb Aliu",
+      "license": "CC0"
+    },
+    {
+      "id": "default_desert_dunes",
+      "filename": "desert_dunes.webp",
+      "category": "default",
+      "displayName": "Desert Dunes",
+      "description": "Serene desert landscape",
+      "url": "https://raw.githubusercontent.com/aliumujib/digital-wellbeing-wallpapers/main/wallpapers/default/desert_dunes.webp",
+      "thumbnailUrl": "https://raw.githubusercontent.com/aliumujib/digital-wellbeing-wallpapers/main/wallpapers/default/desert_dunes_thumb.webp",
+      "width": 1024,
+      "height": 1536,
+      "fileSize": 13594,
+      "tags": [
+        "default",
+        "desert"
+      ],
+      "author": "Abdulmujeeb Aliu",
+      "license": "CC0"
+    },
+    {
+      "id": "default_flowing_hillside",
+      "filename": "flowing_hillside.webp",
+      "category": "default",
+      "displayName": "Flowing Hillside",
+      "description": "Peaceful mountain vista",
+      "url": "https://raw.githubusercontent.com/aliumujib/digital-wellbeing-wallpapers/main/wallpapers/default/flowing_hillside.webp",
+      "thumbnailUrl": "https://raw.githubusercontent.com/aliumujib/digital-wellbeing-wallpapers/main/wallpapers/default/flowing_hillside_thumb.webp",
+      "width": 1024,
+      "height": 1536,
+      "fileSize": 12630,
+      "tags": [
+        "default"
+      ],
+      "author": "Abdulmujeeb Aliu",
+      "license": "CC0"
+    },
+    {
+      "id": "default_flowing_ocean",
+      "filename": "flowing_ocean.webp",
+      "category": "default",
+      "displayName": "Flowing Ocean",
+      "description": "Calming ocean scene",
+      "url": "https://raw.githubusercontent.com/aliumujib/digital-wellbeing-wallpapers/main/wallpapers/default/flowing_ocean.webp",
+      "thumbnailUrl": "https://raw.githubusercontent.com/aliumujib/digital-wellbeing-wallpapers/main/wallpapers/default/flowing_ocean_thumb.webp",
+      "width": 1024,
+      "height": 1536,
+      "fileSize": 52940,
+      "tags": [
+        "default",
+        "ocean"
+      ],
+      "author": "Abdulmujeeb Aliu",
+      "license": "CC0"
+    },
+    {
+      "id": "default_golden_drift",
+      "filename": "golden_drift.webp",
+      "category": "default",
+      "displayName": "Golden Drift",
+      "description": "Abstract flowing design",
+      "url": "https://raw.githubusercontent.com/aliumujib/digital-wellbeing-wallpapers/main/wallpapers/default/golden_drift.webp",
+      "thumbnailUrl": "https://raw.githubusercontent.com/aliumujib/digital-wellbeing-wallpapers/main/wallpapers/default/golden_drift_thumb.webp",
+      "width": 1024,
+      "height": 1536,
+      "fileSize": 198708,
+      "tags": [
+        "default"
+      ],
+      "author": "Abdulmujeeb Aliu",
+      "license": "CC0"
+    },
+    {
+      "id": "default_lonely_tree",
+      "filename": "lonely_tree.webp",
+      "category": "default",
+      "displayName": "Lonely Tree",
+      "description": "Natural landscape with trees",
+      "url": "https://raw.githubusercontent.com/aliumujib/digital-wellbeing-wallpapers/main/wallpapers/default/lonely_tree.webp",
+      "thumbnailUrl": "https://raw.githubusercontent.com/aliumujib/digital-wellbeing-wallpapers/main/wallpapers/default/lonely_tree_thumb.webp",
+      "width": 1024,
+      "height": 1536,
+      "fileSize": 41434,
+      "tags": [
+        "default",
+        "tree"
+      ],
+      "author": "Abdulmujeeb Aliu",
+      "license": "CC0"
+    },
+    {
+      "id": "default_neutral_dunes",
+      "filename": "neutral_dunes.webp",
+      "category": "default",
+      "displayName": "Neutral Dunes",
+      "description": "Serene desert landscape",
+      "url": "https://raw.githubusercontent.com/aliumujib/digital-wellbeing-wallpapers/main/wallpapers/default/neutral_dunes.webp",
+      "thumbnailUrl": "https://raw.githubusercontent.com/aliumujib/digital-wellbeing-wallpapers/main/wallpapers/default/neutral_dunes_thumb.webp",
+      "width": 1024,
+      "height": 1536,
+      "fileSize": 227194,
+      "tags": [
+        "default"
+      ],
+      "author": "Abdulmujeeb Aliu",
+      "license": "CC0"
+    },
+    {
+      "id": "default_pastel_tree",
+      "filename": "pastel_tree.webp",
+      "category": "default",
+      "displayName": "Pastel Tree",
+      "description": "Natural landscape with trees",
+      "url": "https://raw.githubusercontent.com/aliumujib/digital-wellbeing-wallpapers/main/wallpapers/default/pastel_tree.webp",
+      "thumbnailUrl": "https://raw.githubusercontent.com/aliumujib/digital-wellbeing-wallpapers/main/wallpapers/default/pastel_tree_thumb.webp",
+      "width": 1024,
+      "height": 1536,
+      "fileSize": 129110,
+      "tags": [
+        "default",
+        "tree"
+      ],
+      "author": "Abdulmujeeb Aliu",
+      "license": "CC0"
+    },
+    {
+      "id": "default_soft_tide",
+      "filename": "soft_tide.webp",
+      "category": "default",
+      "displayName": "Soft Tide",
+      "description": "Calming ocean scene",
+      "url": "https://raw.githubusercontent.com/aliumujib/digital-wellbeing-wallpapers/main/wallpapers/default/soft_tide.webp",
+      "thumbnailUrl": "https://raw.githubusercontent.com/aliumujib/digital-wellbeing-wallpapers/main/wallpapers/default/soft_tide_thumb.webp",
+      "width": 1024,
+      "height": 1536,
+      "fileSize": 77118,
+      "tags": [
+        "default"
+      ],
+      "author": "Abdulmujeeb Aliu",
+      "license": "CC0"
+    },
+    {
+      "id": "default_stellar_drift",
+      "filename": "stellar_drift.webp",
+      "category": "default",
+      "displayName": "Stellar Drift",
+      "description": "Abstract flowing design",
+      "url": "https://raw.githubusercontent.com/aliumujib/digital-wellbeing-wallpapers/main/wallpapers/default/stellar_drift.webp",
+      "thumbnailUrl": "https://raw.githubusercontent.com/aliumujib/digital-wellbeing-wallpapers/main/wallpapers/default/stellar_drift_thumb.webp",
+      "width": 1024,
+      "height": 1536,
+      "fileSize": 49700,
+      "tags": [
+        "default"
+      ],
+      "author": "Abdulmujeeb Aliu",
+      "license": "CC0"
+    },
+    {
+      "id": "default_sunlit_static",
+      "filename": "sunlit_static.webp",
+      "category": "default",
+      "displayName": "Sunlit Static",
+      "description": "Beautiful sunrise/sunset scene",
+      "url": "https://raw.githubusercontent.com/aliumujib/digital-wellbeing-wallpapers/main/wallpapers/default/sunlit_static.webp",
+      "thumbnailUrl": "https://raw.githubusercontent.com/aliumujib/digital-wellbeing-wallpapers/main/wallpapers/default/sunlit_static_thumb.webp",
+      "width": 1024,
+      "height": 1536,
+      "fileSize": 153384,
+      "tags": [
+        "default"
+      ],
+      "author": "Abdulmujeeb Aliu",
+      "license": "CC0"
+    },
+    {
+      "id": "default_sunrise_dunes",
+      "filename": "sunrise_dunes.webp",
+      "category": "default",
+      "displayName": "Sunrise Dunes",
+      "description": "Serene desert landscape",
+      "url": "https://raw.githubusercontent.com/aliumujib/digital-wellbeing-wallpapers/main/wallpapers/default/sunrise_dunes.webp",
+      "thumbnailUrl": "https://raw.githubusercontent.com/aliumujib/digital-wellbeing-wallpapers/main/wallpapers/default/sunrise_dunes_thumb.webp",
+      "width": 1024,
+      "height": 1536,
+      "fileSize": 35264,
+      "tags": [
+        "default",
+        "sunrise"
+      ],
+      "author": "Abdulmujeeb Aliu",
+      "license": "CC0"
+    },
+    {
+      "id": "default_tide_split",
+      "filename": "tide_split.webp",
+      "category": "default",
+      "displayName": "Tide Split",
+      "description": "Calming ocean scene",
+      "url": "https://raw.githubusercontent.com/aliumujib/digital-wellbeing-wallpapers/main/wallpapers/default/tide_split.webp",
+      "thumbnailUrl": "https://raw.githubusercontent.com/aliumujib/digital-wellbeing-wallpapers/main/wallpapers/default/tide_split_thumb.webp",
+      "width": 1024,
+      "height": 1536,
+      "fileSize": 391236,
+      "tags": [
+        "default"
+      ],
+      "author": "Abdulmujeeb Aliu",
+      "license": "CC0"
+    },
+    {
+      "id": "default_warm_crane",
+      "filename": "warm_crane.webp",
+      "category": "default",
+      "displayName": "Warm Crane",
+      "description": "Elegant wildlife scene",
+      "url": "https://raw.githubusercontent.com/aliumujib/digital-wellbeing-wallpapers/main/wallpapers/default/warm_crane.webp",
+      "thumbnailUrl": "https://raw.githubusercontent.com/aliumujib/digital-wellbeing-wallpapers/main/wallpapers/default/warm_crane_thumb.webp",
+      "width": 1024,
+      "height": 1536,
+      "fileSize": 21906,
+      "tags": [
+        "default"
+      ],
+      "author": "Abdulmujeeb Aliu",
+      "license": "CC0"
+    },
+    {
+      "id": "default_wild_mist",
+      "filename": "wild_mist.webp",
+      "category": "default",
+      "displayName": "Wild Mist",
+      "description": "Misty atmospheric scene",
+      "url": "https://raw.githubusercontent.com/aliumujib/digital-wellbeing-wallpapers/main/wallpapers/default/wild_mist.webp",
+      "thumbnailUrl": "https://raw.githubusercontent.com/aliumujib/digital-wellbeing-wallpapers/main/wallpapers/default/wild_mist_thumb.webp",
+      "width": 1024,
+      "height": 1536,
+      "fileSize": 108356,
+      "tags": [
+        "default"
+      ],
+      "author": "Abdulmujeeb Aliu",
+      "license": "CC0"
+    },
+    {
+      "id": "default_zen_rock_garden",
+      "filename": "zen_rock_garden.webp",
+      "category": "default",
+      "displayName": "Zen Rock Garden",
+      "description": "Zen-inspired peaceful scene",
+      "url": "https://raw.githubusercontent.com/aliumujib/digital-wellbeing-wallpapers/main/wallpapers/default/zen_rock_garden.webp",
+      "thumbnailUrl": "https://raw.githubusercontent.com/aliumujib/digital-wellbeing-wallpapers/main/wallpapers/default/zen_rock_garden_thumb.webp",
+      "width": 1024,
+      "height": 1536,
+      "fileSize": 57310,
+      "tags": [
+        "default",
+        "zen"
+      ],
+      "author": "Abdulmujeeb Aliu",
+      "license": "CC0"
+    }
+  ]
 }

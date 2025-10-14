@@ -14,15 +14,16 @@ This repository is consumed by the Digital Wellbeing launcher app. Wallpapers ar
 
 ### Manifest URL
 ```
-https://raw.githubusercontent.com/amjb_apps/digital-wellbeing-wallpapers/main/manifest.json
+https://raw.githubusercontent.com/aliumujib/digital-wellbeing-wallpapers/main/manifest.json
 ```
 
 ## Contributing
 1. Add wallpapers to appropriate category folder
-2. Generate thumbnails using `scripts/generate_thumbnails.py`
-3. Update `manifest.json` with new wallpaper metadata
-4. Validate manifest using `scripts/validate_manifest.py`
-5. Submit pull request
+2. Run `make workflow` to generate thumbnails and manifest
+3. Commit and push changes
+4. GitHub Actions will automatically validate and regenerate if needed
+
+**Note**: GitHub Actions will auto-generate thumbnails and manifest on push to main, but it's recommended to run `make workflow` locally first.
 
 ## Image Specifications
 - **Full size**: 1080x1920 (max 1MB)
@@ -57,8 +58,8 @@ Edit `manifest.json` and add your wallpaper entry:
   "category": "work",
   "displayName": "New Design",
   "description": "Description of the wallpaper",
-  "url": "https://raw.githubusercontent.com/amjb_apps/digital-wellbeing-wallpapers/main/wallpapers/work/work_new_design.jpg",
-  "thumbnailUrl": "https://raw.githubusercontent.com/amjb_apps/digital-wellbeing-wallpapers/main/wallpapers/work/work_new_design_thumb.jpg",
+  "url": "https://raw.githubusercontent.com/aliumujib/digital-wellbeing-wallpapers/main/wallpapers/work/work_new_design.jpg",
+  "thumbnailUrl": "https://raw.githubusercontent.com/aliumujib/digital-wellbeing-wallpapers/main/wallpapers/work/work_new_design_thumb.jpg",
   "width": 1080,
   "height": 1920,
   "fileSize": 524288,

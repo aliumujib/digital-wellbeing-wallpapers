@@ -1,0 +1,91 @@
+name: Validate and Regenerate Manifest
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'wallpapers/**'
+      - 'scripts/**'
+      - 'manifest.json'
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  validate-and-regenerate:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      
+      - name: Install dependencies
+        run: |
+          pip install Pillow
+      
+      - name: List wallpapers
+        run: |
+          echo "📋 Current wallpapers:"
+          python3 scripts/list_wallpapers.py
+      
+      - name: Generate thumbnails
+        run: |
+          echo "🖼️  Generating thumbnails..."
+          python3 scripts/generate_thumbnails.py
+      
+      - name: Regenerate manifest
+        run: |
+          echo "📝 Regenerating manifest..."
+          python3 scripts/generate_manifest.py
+      
+      - name: Validate manifest
+        run: |
+          echo "✅ Validating manifest..."
+          python3 scripts/validate_manifest.py
+      
+      - name: Check for changes
+        id: check_changes
+        run: |
+          if git diff --quiet; then
+            echo "changes=false" >> $GITHUB_OUTPUT
+            echo "✓ No changes needed"
+          else
+            echo "changes=true" >> $GITHUB_OUTPUT
+            echo "⚠ Changes detected"
+            git diff --stat
+          fi
+      
+      - name: Commit and push changes
+        if: steps.check_changes.outputs.changes == 'true' && github.event_name == 'push'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add manifest.json wallpapers/
+          git commit -m "🤖 Auto-regenerate manifest and thumbnails"
+          git push
+      
+      - name: Summary
+        run: |
+          echo "## Workflow Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "✅ Manifest validation: **PASSED**" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          # Count wallpapers
+          WALLPAPER_COUNT=$(find wallpapers -type f \( -name "*.jpg" -o -name "*.jpeg" -o -name "*.png" -o -name "*.webp" \) ! -name "*_thumb.*" | wc -l)
+          echo "📊 Total wallpapers: **$WALLPAPER_COUNT**" >> $GITHUB_STEP_SUMMARY
+          
+          if [ "${{ steps.check_changes.outputs.changes }}" == "true" ]; then
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "🔄 Changes committed and pushed" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "✓ No changes needed" >> $GITHUB_STEP_SUMMARY
+          fi

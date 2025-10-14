@@ -11,11 +11,15 @@ from pathlib import Path
 WALLPAPER_DIR = Path("wallpapers")
 THUMBNAIL_SIZE = (200, 356)
 THUMBNAIL_QUALITY = 75
+SUPPORTED_FORMATS = {".jpg", ".jpeg", ".png", ".webp"}
 
 def generate_thumbnail(image_path):
     """Generate thumbnail for a single image."""
     if "_thumb" in image_path.name:
         return  # Skip existing thumbnails
+    
+    if image_path.suffix.lower() not in SUPPORTED_FORMATS:
+        return  # Skip unsupported formats
     
     thumb_path = image_path.parent / f"{image_path.stem}_thumb{image_path.suffix}"
     
@@ -30,7 +34,13 @@ def generate_thumbnail(image_path):
                 img = img.convert("RGB")
             
             img.thumbnail(THUMBNAIL_SIZE, Image.Resampling.LANCZOS)
-            img.save(thumb_path, "JPEG", quality=THUMBNAIL_QUALITY, optimize=True)
+            
+            # Save with appropriate format
+            if image_path.suffix.lower() == ".webp":
+                img.save(thumb_path, "WEBP", quality=THUMBNAIL_QUALITY, method=6)
+            else:
+                img.save(thumb_path, "JPEG", quality=THUMBNAIL_QUALITY, optimize=True)
+            
             print(f"✓ Generated thumbnail: {thumb_path.name}")
     except Exception as e:
         print(f"✗ Error generating thumbnail for {image_path.name}: {e}")
@@ -45,9 +55,12 @@ def main():
         
         print(f"Processing category: {category_dir.name}")
         image_count = 0
-        for image_path in category_dir.glob("*.jpg"):
-            generate_thumbnail(image_path)
-            image_count += 1
+        
+        # Process all supported image formats
+        for ext in SUPPORTED_FORMATS:
+            for image_path in category_dir.glob(f"*{ext}"):
+                generate_thumbnail(image_path)
+                image_count += 1
         
         if image_count == 0:
             print(f"  No images found in {category_dir.name}")
