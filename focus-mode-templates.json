@@ -1,0 +1,425 @@
+{
+  "version": 1,
+  "lastUpdated": "2026-01-04T14:04:15.882994Z",
+  "templates": [
+    {
+      "id": "deep_work",
+      "name": "Deep Work",
+      "icon": "💼",
+      "description": "Eliminate distractions and maximize productivity during work hours",
+      "category": "PRODUCTIVITY",
+      "appRestrictionDescriptor": {
+        "type": "ByCategory",
+        "categories": [
+          "SOCIAL",
+          "VIDEO",
+          "GAME"
+        ],
+        "specificApps": []
+      },
+      "wallpaperDescriptor": {
+        "type": "RandomFromCategory",
+        "category": "default",
+        "fallbackWallpaperId": "default_desert_dunes"
+      },
+      "triggerDescriptor": {
+        "type": "PreConfigured",
+        "trigger": {
+          "id": "deep_work_schedule",
+          "startHour": 9,
+          "startMinute": 0,
+          "startSecond": 0,
+          "endHour": 17,
+          "endMinute": 0,
+          "endSecond": 0,
+          "daysOfWeek": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "isOneTime": false,
+          "endTimestampMs": null,
+          "alarmRequestCodes": null
+        },
+        "isCustomizable": true
+      },
+      "zenModeDescriptor": {
+        "type": "PreConfigured",
+        "config": {
+          "enabled": true,
+          "zenPolicy": {
+            "allowedCallsFrom": "STARRED",
+            "allowedMessagesFrom": "NONE",
+            "allowRepeatCallers": true,
+            "allowAlarms": true,
+            "allowMedia": false,
+            "allowSystem": true,
+            "allowReminders": true,
+            "allowEvents": true,
+            "allowConversations": "NONE"
+          },
+          "deviceEffects": {
+            "displayGrayscale": false,
+            "useNightMode": false,
+            "dimWallpaper": false,
+            "suppressAmbientDisplay": false,
+            "disableAutoBrightness": false,
+            "disableTapToWake": false,
+            "disableTiltToWake": false,
+            "maximizeDoze": false
+          }
+        }
+      },
+      "launcherPagesDescriptor": {
+        "type": "AllPages"
+      },
+      "customizationSteps": [],
+      "isRemote": true,
+      "version": 1
+    },
+    {
+      "id": "sleep",
+      "name": "Sleep",
+      "icon": "🌙",
+      "description": "Wind down and ensure restful sleep without digital distractions",
+      "category": "WELLNESS",
+      "appRestrictionDescriptor": {
+        "type": "ByCategory",
+        "categories": [
+          "SOCIAL",
+          "VIDEO",
+          "GAME",
+          "NEWS"
+        ],
+        "specificApps": []
+      },
+      "wallpaperDescriptor": {
+        "type": "RandomFromCategory",
+        "category": "default",
+        "fallbackWallpaperId": "default_wild_mist"
+      },
+      "triggerDescriptor": {
+        "type": "PreConfigured",
+        "trigger": {
+          "id": "sleep_schedule",
+          "startHour": 22,
+          "startMinute": 0,
+          "startSecond": 0,
+          "endHour": 6,
+          "endMinute": 0,
+          "endSecond": 0,
+          "daysOfWeek": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "isOneTime": false,
+          "endTimestampMs": null,
+          "alarmRequestCodes": null
+        },
+        "isCustomizable": true
+      },
+      "zenModeDescriptor": {
+        "type": "PreConfigured",
+        "config": {
+          "enabled": true,
+          "zenPolicy": {
+            "allowedCallsFrom": "STARRED",
+            "allowedMessagesFrom": "STARRED",
+            "allowRepeatCallers": true,
+            "allowAlarms": true,
+            "allowMedia": false,
+            "allowSystem": false,
+            "allowReminders": false,
+            "allowEvents": false,
+            "allowConversations": "NONE"
+          },
+          "deviceEffects": {
+            "displayGrayscale": true,
+            "useNightMode": true,
+            "dimWallpaper": true,
+            "suppressAmbientDisplay": true,
+            "disableAutoBrightness": false,
+            "disableTapToWake": true,
+            "disableTiltToWake": true,
+            "maximizeDoze": true
+          }
+        }
+      },
+      "launcherPagesDescriptor": {
+        "type": "AllPages"
+      },
+      "customizationSteps": [],
+      "isRemote": true,
+      "version": 1
+    },
+    {
+      "id": "mindful_mornings",
+      "name": "Mindful Mornings",
+      "icon": "☀️",
+      "description": "Start your day with intention, not distraction",
+      "category": "WELLNESS",
+      "appRestrictionDescriptor": {
+        "type": "UserSelected",
+        "prompt": "Which apps distract you in the morning?",
+        "suggestedCategories": [
+          "SOCIAL",
+          "VIDEO"
+        ],
+        "suggestedApps": []
+      },
+      "wallpaperDescriptor": {
+        "type": "RandomFromCategory",
+        "category": "default",
+        "fallbackWallpaperId": "default_sunlit_static"
+      },
+      "triggerDescriptor": {
+        "type": "PreConfigured",
+        "trigger": {
+          "id": "morning_schedule",
+          "startHour": 6,
+          "startMinute": 0,
+          "startSecond": 0,
+          "endHour": 9,
+          "endMinute": 0,
+          "endSecond": 0,
+          "daysOfWeek": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "isOneTime": false,
+          "endTimestampMs": null,
+          "alarmRequestCodes": null
+        },
+        "isCustomizable": true
+      },
+      "zenModeDescriptor": {
+        "type": "PreConfigured",
+        "config": {
+          "enabled": true,
+          "zenPolicy": {
+            "allowedCallsFrom": "CONTACTS",
+            "allowedMessagesFrom": "CONTACTS",
+            "allowRepeatCallers": true,
+            "allowAlarms": true,
+            "allowMedia": true,
+            "allowSystem": true,
+            "allowReminders": true,
+            "allowEvents": true,
+            "allowConversations": "IMPORTANT"
+          },
+          "deviceEffects": {
+            "displayGrayscale": false,
+            "useNightMode": false,
+            "dimWallpaper": false,
+            "suppressAmbientDisplay": false,
+            "disableAutoBrightness": false,
+            "disableTapToWake": false,
+            "disableTiltToWake": false,
+            "maximizeDoze": false
+          }
+        }
+      },
+      "launcherPagesDescriptor": {
+        "type": "UserSelected",
+        "prompt": "Select pages for your morning routine",
+        "suggestedPageIds": []
+      },
+      "customizationSteps": [
+        {
+          "type": "SelectApps",
+          "prompt": "Which apps distract you in the morning?",
+          "descriptor": {
+            "prompt": "Which apps distract you in the morning?",
+            "suggestedCategories": [
+              "SOCIAL",
+              "VIDEO"
+            ],
+            "suggestedApps": []
+          }
+        },
+        {
+          "type": "SelectPages",
+          "prompt": "Select pages for your morning routine",
+          "descriptor": {
+            "prompt": "Select pages for your morning routine",
+            "suggestedPageIds": []
+          }
+        }
+      ],
+      "isRemote": true,
+      "version": 1
+    },
+    {
+      "id": "dumbphone",
+      "name": "Dumbphone",
+      "icon": "📱",
+      "description": "Transform your smartphone into a simple communication device",
+      "category": "WELLNESS",
+      "appRestrictionDescriptor": {
+        "type": "AllowListOnly",
+        "allowedCategories": [],
+        "allowedApps": []
+      },
+      "wallpaperDescriptor": {
+        "type": "RandomFromCategory",
+        "category": "default",
+        "fallbackWallpaperId": "default_neutral_dunes"
+      },
+      "triggerDescriptor": {
+        "type": "Manual"
+      },
+      "zenModeDescriptor": {
+        "type": "PreConfigured",
+        "config": {
+          "enabled": true,
+          "zenPolicy": {
+            "allowedCallsFrom": "ANYONE",
+            "allowedMessagesFrom": "ANYONE",
+            "allowRepeatCallers": true,
+            "allowAlarms": true,
+            "allowMedia": false,
+            "allowSystem": true,
+            "allowReminders": true,
+            "allowEvents": true,
+            "allowConversations": "ANYONE"
+          },
+          "deviceEffects": {
+            "displayGrayscale": true,
+            "useNightMode": false,
+            "dimWallpaper": false,
+            "suppressAmbientDisplay": false,
+            "disableAutoBrightness": false,
+            "disableTapToWake": false,
+            "disableTiltToWake": false,
+            "maximizeDoze": false
+          }
+        }
+      },
+      "launcherPagesDescriptor": {
+        "type": "Specific",
+        "pageIds": [
+          0
+        ]
+      },
+      "customizationSteps": [],
+      "isRemote": true,
+      "version": 1
+    },
+    {
+      "id": "family_time",
+      "name": "Family Time",
+      "icon": "👨‍👩‍👧‍👦",
+      "description": "Be fully present during quality time with loved ones",
+      "category": "SOCIAL",
+      "appRestrictionDescriptor": {
+        "type": "UserSelected",
+        "prompt": "Which apps distract you during family time?",
+        "suggestedCategories": [
+          "SOCIAL",
+          "VIDEO",
+          "PRODUCTIVITY"
+        ],
+        "suggestedApps": []
+      },
+      "wallpaperDescriptor": {
+        "type": "RandomFromCategory",
+        "category": "default",
+        "fallbackWallpaperId": "default_warm_crane"
+      },
+      "triggerDescriptor": {
+        "type": "PreConfigured",
+        "trigger": {
+          "id": "family_schedule",
+          "startHour": 19,
+          "startMinute": 0,
+          "startSecond": 0,
+          "endHour": 21,
+          "endMinute": 0,
+          "endSecond": 0,
+          "daysOfWeek": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "isOneTime": false,
+          "endTimestampMs": null,
+          "alarmRequestCodes": null
+        },
+        "isCustomizable": true
+      },
+      "zenModeDescriptor": {
+        "type": "PreConfigured",
+        "config": {
+          "enabled": true,
+          "zenPolicy": {
+            "allowedCallsFrom": "CONTACTS",
+            "allowedMessagesFrom": "CONTACTS",
+            "allowRepeatCallers": true,
+            "allowAlarms": true,
+            "allowMedia": true,
+            "allowSystem": true,
+            "allowReminders": false,
+            "allowEvents": false,
+            "allowConversations": "IMPORTANT"
+          },
+          "deviceEffects": {
+            "displayGrayscale": false,
+            "useNightMode": false,
+            "dimWallpaper": false,
+            "suppressAmbientDisplay": false,
+            "disableAutoBrightness": false,
+            "disableTapToWake": false,
+            "disableTiltToWake": false,
+            "maximizeDoze": false
+          }
+        }
+      },
+      "launcherPagesDescriptor": {
+        "type": "UserSelected",
+        "prompt": "Select pages for family time",
+        "suggestedPageIds": []
+      },
+      "customizationSteps": [
+        {
+          "type": "SelectApps",
+          "prompt": "Which apps distract you during family time?",
+          "descriptor": {
+            "prompt": "Which apps distract you during family time?",
+            "suggestedCategories": [
+              "SOCIAL",
+              "VIDEO",
+              "PRODUCTIVITY"
+            ],
+            "suggestedApps": []
+          }
+        },
+        {
+          "type": "SelectPages",
+          "prompt": "Select pages for family time",
+          "descriptor": {
+            "prompt": "Select pages for family time",
+            "suggestedPageIds": []
+          }
+        }
+      ],
+      "isRemote": true,
+      "version": 1
+    }
+  ]
+}
