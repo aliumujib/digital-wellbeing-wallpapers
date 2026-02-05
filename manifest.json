@@ -301,6 +301,126 @@
       ],
       "author": "Abdulmujeeb Aliu",
       "license": "CC0"
+    },
+    {
+      "id": "productivity_dark_silk_flow",
+      "filename": "dark_silk_flow.webp",
+      "category": "productivity",
+      "displayName": "Dark Silk Flow",
+      "description": "Abstract flowing silk fabric waves in monochromatic dark gray tones",
+      "url": "https://raw.githubusercontent.com/aliumujib/digital-wellbeing-wallpapers/main/wallpapers/productivity/dark_silk_flow.webp",
+      "thumbnailUrl": "https://raw.githubusercontent.com/aliumujib/digital-wellbeing-wallpapers/main/wallpapers/productivity/dark_silk_flow_thumb.webp",
+      "width": 768,
+      "height": 1376,
+      "fileSize": 18042,
+      "tags": [
+        "productivity",
+        "dark",
+        "abstract",
+        "minimalist"
+      ],
+      "author": "Abdulmujeeb Aliu",
+      "license": "CC0"
+    },
+    {
+      "id": "productivity_teal_ocean_flow",
+      "filename": "teal_ocean_flow.webp",
+      "category": "productivity",
+      "displayName": "Teal Ocean Flow",
+      "description": "Abstract fluid organic shapes in deep teal and turquoise colors",
+      "url": "https://raw.githubusercontent.com/aliumujib/digital-wellbeing-wallpapers/main/wallpapers/productivity/teal_ocean_flow.webp",
+      "thumbnailUrl": "https://raw.githubusercontent.com/aliumujib/digital-wellbeing-wallpapers/main/wallpapers/productivity/teal_ocean_flow_thumb.webp",
+      "width": 768,
+      "height": 1376,
+      "fileSize": 24858,
+      "tags": [
+        "productivity",
+        "teal",
+        "ocean",
+        "abstract"
+      ],
+      "author": "Abdulmujeeb Aliu",
+      "license": "CC0"
+    },
+    {
+      "id": "productivity_rainbow_pillars",
+      "filename": "rainbow_pillars.webp",
+      "category": "productivity",
+      "displayName": "Rainbow Pillars",
+      "description": "Colorful vertical rounded bars ascending on dark starry background",
+      "url": "https://raw.githubusercontent.com/aliumujib/digital-wellbeing-wallpapers/main/wallpapers/productivity/rainbow_pillars.webp",
+      "thumbnailUrl": "https://raw.githubusercontent.com/aliumujib/digital-wellbeing-wallpapers/main/wallpapers/productivity/rainbow_pillars_thumb.webp",
+      "width": 768,
+      "height": 1376,
+      "fileSize": 23230,
+      "tags": [
+        "productivity",
+        "colorful",
+        "geometric",
+        "playful"
+      ],
+      "author": "Abdulmujeeb Aliu",
+      "license": "CC0"
+    },
+    {
+      "id": "productivity_sage_organic_blend",
+      "filename": "sage_organic_blend.webp",
+      "category": "productivity",
+      "displayName": "Sage Organic Blend",
+      "description": "Abstract organic blob shapes in various shades of sage green",
+      "url": "https://raw.githubusercontent.com/aliumujib/digital-wellbeing-wallpapers/main/wallpapers/productivity/sage_organic_blend.webp",
+      "thumbnailUrl": "https://raw.githubusercontent.com/aliumujib/digital-wellbeing-wallpapers/main/wallpapers/productivity/sage_organic_blend_thumb.webp",
+      "width": 768,
+      "height": 1376,
+      "fileSize": 17446,
+      "tags": [
+        "productivity",
+        "green",
+        "organic",
+        "calming"
+      ],
+      "author": "Abdulmujeeb Aliu",
+      "license": "CC0"
+    },
+    {
+      "id": "productivity_slate_blue_circles",
+      "filename": "slate_blue_circles.webp",
+      "category": "productivity",
+      "displayName": "Slate Blue Circles",
+      "description": "Abstract overlapping organic circles in muted slate blue tones",
+      "url": "https://raw.githubusercontent.com/aliumujib/digital-wellbeing-wallpapers/main/wallpapers/productivity/slate_blue_circles.webp",
+      "thumbnailUrl": "https://raw.githubusercontent.com/aliumujib/digital-wellbeing-wallpapers/main/wallpapers/productivity/slate_blue_circles_thumb.webp",
+      "width": 768,
+      "height": 1376,
+      "fileSize": 15268,
+      "tags": [
+        "productivity",
+        "blue",
+        "abstract",
+        "professional"
+      ],
+      "author": "Abdulmujeeb Aliu",
+      "license": "CC0"
+    },
+    {
+      "id": "productivity_sunset_peaks",
+      "filename": "sunset_peaks.webp",
+      "category": "productivity",
+      "displayName": "Sunset Peaks",
+      "description": "Dramatic sunset gradient with layered mountain silhouettes",
+      "url": "https://raw.githubusercontent.com/aliumujib/digital-wellbeing-wallpapers/main/wallpapers/productivity/sunset_peaks.webp",
+      "thumbnailUrl": "https://raw.githubusercontent.com/aliumujib/digital-wellbeing-wallpapers/main/wallpapers/productivity/sunset_peaks_thumb.webp",
+      "width": 768,
+      "height": 1376,
+      "fileSize": 17886,
+      "tags": [
+        "productivity",
+        "sunset",
+        "mountains",
+        "inspirational"
+      ],
+      "author": "Abdulmujeeb Aliu",
+      "license": "CC0"
     }
   ]
 }
