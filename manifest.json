@@ -280,6 +280,27 @@
       ],
       "author": "Abdulmujeeb Aliu",
       "license": "CC0"
+    },
+    {
+      "id": "default_island_tree",
+      "filename": "island_tree.webp",
+      "category": "default",
+      "displayName": "Island Tree",
+      "description": "Aerial view of a small island with a lush tree surrounded by dark teal ocean",
+      "url": "https://raw.githubusercontent.com/aliumujib/digital-wellbeing-wallpapers/main/wallpapers/default/island_tree.webp",
+      "thumbnailUrl": "https://raw.githubusercontent.com/aliumujib/digital-wellbeing-wallpapers/main/wallpapers/default/island_tree_thumb.webp",
+      "width": 1024,
+      "height": 1536,
+      "fileSize": 67198,
+      "tags": [
+        "default",
+        "ocean",
+        "tree",
+        "aerial",
+        "nature"
+      ],
+      "author": "Abdulmujeeb Aliu",
+      "license": "CC0"
     }
   ]
 }
